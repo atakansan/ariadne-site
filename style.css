@@ -1,0 +1,15 @@
+:root { --bg:#f4efe6; --card:#fffaf1; --ink:#1c2230; --ink2:#5b6170; --gold:#a87a1c; --line:#d9cfbd; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0b1320; --card:#121f33; --ink:#ece6d9; --ink2:#9aa3b5; --gold:#e0b453; --line:#24324a; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+header svg { width:44px; height:44px; fill:none; stroke:var(--gold); stroke-width:2.2; stroke-linecap:round; }
+h1 { font:600 30px/1.1 "Iowan Old Style",Palatino,Georgia,serif; margin:0; }
+h2 { font:600 20px "Iowan Old Style",Palatino,Georgia,serif; margin:28px 0 6px; }
+.tag { color:var(--ink2); font-style:italic; margin:2px 0 0; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 24px; }
+a { color:var(--gold); }
+a:focus-visible { outline:2px solid var(--gold); outline-offset:2px; border-radius:4px; }
+nav { margin-top:28px; display:flex; gap:18px; flex-wrap:wrap; font-size:14px; }
+small { color:var(--ink2); }
