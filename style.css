@@ -13,3 +13,4 @@ a { color:var(--gold); }
 a:focus-visible { outline:2px solid var(--gold); outline-offset:2px; border-radius:4px; }
 nav { margin-top:28px; display:flex; gap:18px; flex-wrap:wrap; font-size:14px; }
 small { color:var(--ink2); }
+nav a[aria-current="page"] { color:var(--ink); text-decoration:none; font-weight:600; }
